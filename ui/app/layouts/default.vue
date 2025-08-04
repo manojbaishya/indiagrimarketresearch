@@ -2,6 +2,7 @@
     <div id="app-layout">
         <div id="app-header">
             <img src="/favicon.ico" alt="logo">
+
             <AppHeader :links="navigationData" />
         </div>
         <div id="app-content">
@@ -35,7 +36,7 @@ $footer-height: 40px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-color: hsl(0, 2%, 75%);
     border-style: solid;
     border-bottom-width: 1px;
@@ -49,5 +50,6 @@ $footer-height: 40px;
 #app-content {
     flex: 1 1 auto;
     overflow: auto;
+    display: flex;
 }
 </style>

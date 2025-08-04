@@ -4,7 +4,10 @@ export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: { enabled: true },
     css: ['~/assets/css/tailwind.css'],
-    modules: ['@nuxt/eslint', 'shadcn-nuxt', '@vueuse/nuxt'],
+    modules: ['@nuxt/eslint', 'shadcn-nuxt', '@vueuse/nuxt', '@nuxtjs/color-mode'],
+    colorMode: {
+        classSuffix: ''
+    },
     vite: {
         plugins: [tailwindcss()]
     },

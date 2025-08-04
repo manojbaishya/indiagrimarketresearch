@@ -28,6 +28,9 @@
         "vue-router": "^4.5.1"
     },
     "devDependencies": {
+        "@iconify-json/radix-icons": "^1.2.2",
+        "@iconify/vue": "^5.0.0",
+        "@nuxtjs/color-mode": "^3.5.2",
         "sass": "^1.64.0",
         "typescript": "^5.9.2",
         "vue-tsc": "^3.0.5"
