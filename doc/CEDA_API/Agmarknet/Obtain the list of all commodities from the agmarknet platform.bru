@@ -1,0 +1,11 @@
+meta {
+  name: Obtain the list of all commodities from the agmarknet platform
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/agmarknet/commodities
+  body: none
+  auth: inherit
+}

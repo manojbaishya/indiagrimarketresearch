@@ -1,0 +1,11 @@
+meta {
+  name: Obtain the list of all states and districts available.
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/agmarknet/geographies
+  body: none
+  auth: inherit
+}

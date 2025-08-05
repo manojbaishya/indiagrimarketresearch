@@ -1,0 +1,22 @@
+meta {
+  name: Obtain the prices for a commodity at the national, state, district or the market level.
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/agmarknet/prices
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "commodity_id": 138,
+    "state_id": 29,
+    "district_id": [ 572 ],
+    "market_id": [ 718, 107, 773, 719 ],
+    "from_date": "2025-07-01",
+    "to_date": "2025-07-30"
+  }
+}

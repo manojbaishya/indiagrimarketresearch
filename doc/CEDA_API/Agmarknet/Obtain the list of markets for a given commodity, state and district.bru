@@ -1,0 +1,20 @@
+meta {
+  name: Obtain the list of markets for a given commodity, state and district.
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/agmarknet/markets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "commodity_id": 138,
+    "state_id": 29,
+    "district_id": 572,
+    "indicator": "price"
+  }
+}
